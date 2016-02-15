@@ -1,0 +1,17 @@
+#include<stdio.h>
+int move (int n);
+int main()
+{ int n,f;
+  scanf("%d",&n);
+ move(n);
+ f=move(n);
+ printf("%d",f);
+ return 0;
+}
+int move(int n)
+{ if(n==1)
+   return 1;
+ else
+   return 1 + 2*move(n-1);
+}
+  
